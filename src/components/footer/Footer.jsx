@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.scss'
-import { getCurrentYear } from '../helpers/utils'
+import { getCurrentYear } from '../../helpers/utils'
 
 const Footer = () => {
     return (
