@@ -1,5 +1,34 @@
 @import "../../variables";
 
 .main {
-  background: $bg;
+  @include flex;
+  overflow: hidden;
+
+  &__row {
+    @include flex;
+    gap: 33px;
+    flex-wrap: wrap;
+  }
+
+  &__col {
+    position: relative;
+    @include flexCenter;
+    padding: 55px;
+    border-radius: 5px;
+    border: 1px solid $border;
+
+    span {
+      font-size: 25px;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $red;
+      border-radius: 3px;
+      padding: 3px;
+      color: $white;
+    }
+  }
 }

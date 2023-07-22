@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: $bg;
+  padding: 25px 0;
+  border-bottom: 1px solid $border;
+
+  &__nav {
+    @include flexCenter;
+    gap: 50px;
+
+    button {
+      padding: 7px;
+      border-radius: 5px;
+      color: $white;
+      background: $blue;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+    }
+  }
+}

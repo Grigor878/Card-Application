@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.footer {
+  background: $bg;
+  padding: 25px 0;
+  border-top: 1px solid $border;
+
+  &__context {
+    @include flex;
+    justify-content: space-between;
+
+    p {
+      color: $black;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    span {
+      color: $blue;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+  }
+}

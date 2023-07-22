@@ -1,8 +1,22 @@
-@import '../../variables';
+@import "../../variables";
 
 .notFound {
-    width: 100vw;
-    height: 80vh;
-    @include flex;
-    background: $bg;
+  width: 100vw;
+  height: 80vh;
+  @include flex;
+
+  &__context {
+    @include flexColCenter;
+    gap: 33px;
+
+    button {
+      padding: 7px;
+      border-radius: 5px;
+      color: $white;
+      background: $blue;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+    }
   }
+}
