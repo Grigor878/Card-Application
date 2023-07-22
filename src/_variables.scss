@@ -1,0 +1,39 @@
+// $bg: #f8f8fa;
+$bg: #e5e5e5;
+$white: #ffffff;
+$blue: #4a46f1;
+$green: #2eaa50;
+$red: #bb3434;
+$black: #0f1013;
+$border: #cfd1da;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexColCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin transition {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
